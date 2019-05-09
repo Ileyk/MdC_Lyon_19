@@ -1,0 +1,96 @@
+\documentclass{beamer}
+%\usetheme{Marburg}
+%\graphicspath{{Arquivos/}}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{animate}
+%\usepackage{xmpmulti}
+% - - -
+\usepackage{media9}%
+\newcommand{\includemovie}[3]{%
+\includemedia[%
+width=#1,height=#2,%
+activate=pagevisible,%
+deactivate=pageclose,%
+addresource=#3,%
+flashvars={%
+src=#3 % same path as in addresource!
+&autoPlay=true % default: false; if =true, automatically starts playback after activation (see option ‘activation)’
+&loop=true % if loop=true, media is played in a loop
+&controlBarAutoHideTimeout=0 %  time span before auto-hide
+}%
+]{}{StrobeMediaPlayback.swf}%
+}% end of the new command
+% - - -
+%\author{Egmon Pereira}
+%\newcommand{\TT}{A Bênção de Poder Contribuir}
+%\newcommand{\TB}{Texto Bíblico}
+%\newcommand{\DT}{Deuteronômio 26.1-15}
+%\newcommand{\IN}{Introdução}
+%\newcommand{\PI}{I - Contribuir é Reconhececimento}
+%\newcommand{\PII}{II - Contribuir é Adoração}
+%\newcommand{\PIII}{III - Contribuir é Compromisso}
+%\newcommand{\PIV}{IV - Contribuir é Fidelidade}
+%\newcommand{\PV}{V - Contribuir é Confiança}
+%\newcommand{\CO}{Conclusão}
+
+%\title{\TT}
+%%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{\href{www.egmon.com.br}{www.egmon.com.br}} 
+%\logo{\includegraphics[scale=0.033]{LogoReformada}} 
+%\institute{Igreja Presbiteriana Central} 
+%\date{06 de Janeiro de 2019} 
+%\subject{} 
+
+\usebackgroundtemplate%
+{%
+\vbox to \paperheight{
+\vfill
+\includegraphics[width=\paperwidth]{background_clumps.png} %your picture
+    }%
+}
+
+\begin{document}
+
+%\begin{frame}{\TB}{\TT}
+%\animategraphics[loop,controls,width=\linewidth]{2}{Animation_1/tmp-}{0}{7}
+%\end{frame}
+
+\begin{frame}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}%
+    \includemovie{\columnwidth}{\columnwidth}{clumps_all.mp4}%
+\end{center}%
+\column{0.5\textwidth}
+\begin{center}%
+    \includemovie{\columnwidth}{\columnwidth}{clumps_HR.mp4}%
+\end{center}%
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}%
+    \includemovie{\columnwidth}{\columnwidth}{clumps_all.mp4}%
+\end{center}%
+\column{0.5\textwidth}
+\begin{center}%
+    \includemovie{\columnwidth}{\columnwidth}{clumps_zoom.mp4}%
+\end{center}%
+\end{columns}
+\end{frame}
+
+%\begin{frame}{\TB}{\TT}
+%        \transduration<0-16>{0}
+%        \multiinclude[<+->][format=png, graphics={width=\linewidth}]{Animation_1/tmp}
+%\end{frame}
+
+
+\end{document}

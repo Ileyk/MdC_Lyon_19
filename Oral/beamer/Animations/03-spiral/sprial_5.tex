@@ -1,0 +1,112 @@
+\documentclass{beamer}
+%\usetheme{Marburg}
+%\graphicspath{{Arquivos/}}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{animate}
+%\usepackage{xmpmulti}
+% - - -
+\usepackage{media9}%
+\newcommand{\includemovie}[3]{%
+\includemedia[%
+width=#1,height=#2,%
+activate=pagevisible,%
+deactivate=pageclose,%
+addresource=#3,%
+flashvars={%
+src=#3 % same path as in addresource!
+&autoPlay=true % default: false; if =true, automatically starts playback after activation (see option ‘activation)’
+&loop=true % if loop=true, media is played in a loop
+&controlBarAutoHideTimeout=0 %  time span before auto-hide
+}%
+]{}{StrobeMediaPlayback.swf}%
+}% end of the new command
+% - - -
+%\author{Egmon Pereira}
+%\newcommand{\TT}{A Bênção de Poder Contribuir}
+%\newcommand{\TB}{Texto Bíblico}
+%\newcommand{\DT}{Deuteronômio 26.1-15}
+%\newcommand{\IN}{Introdução}
+%\newcommand{\PI}{I - Contribuir é Reconhececimento}
+%\newcommand{\PII}{II - Contribuir é Adoração}
+%\newcommand{\PIII}{III - Contribuir é Compromisso}
+%\newcommand{\PIV}{IV - Contribuir é Fidelidade}
+%\newcommand{\PV}{V - Contribuir é Confiança}
+%\newcommand{\CO}{Conclusão}
+
+%\title{\TT}
+%%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{\href{www.egmon.com.br}{www.egmon.com.br}} 
+%\logo{\includegraphics[scale=0.033]{LogoReformada}} 
+%\institute{Igreja Presbiteriana Central} 
+%\date{06 de Janeiro de 2019} 
+%\subject{} 
+
+\usebackgroundtemplate%
+{%
+\vbox to \paperheight{
+\vfill
+\includegraphics[width=\paperwidth]{background_spiral_v5_1.pdf} %your picture
+    }%
+}
+
+\begin{document}
+
+\begin{frame}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\column{0.5\textwidth}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+\centering
+	\hspace*{-0.2cm}
+	\vspace*{-6cm}
+    \includemovie{1.11\columnwidth}{1.05\columnwidth}{spiral.mp4}%
+\end{minipage}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\end{columns}
+\end{frame}
+
+\usebackgroundtemplate%
+{%
+\vbox to \paperheight{
+\vfill
+\includegraphics[width=\paperwidth]{background_spiral_v5_2.pdf} %your picture
+    }%
+}
+
+\begin{frame}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\column{0.5\textwidth}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+\centering
+	\hspace*{-0.2cm}
+	\vspace*{-6cm}
+    \includemovie{1.11\columnwidth}{1.05\columnwidth}{spiral.mp4}%
+\end{minipage}
+\begin{minipage}[c][0.4\textheight][c]{\linewidth}
+  \centering
+\end{minipage}
+\end{columns}
+\end{frame}
+
+\end{document}
